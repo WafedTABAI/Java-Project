@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="705.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/BackgroundAuthentification.jpg" />
+         </image>
+      </ImageView>
+      <TabPane layoutX="-2.0" layoutY="105.0" prefHeight="295.0" prefWidth="707.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="              Accueil             ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="266.0" prefWidth="717.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="33.0" prefHeight="55.0" prefWidth="304.0" style="-fx-background-color: #1A5994;" text="Arrivage à venir" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="399.0" layoutY="178.0" prefHeight="55.0" prefWidth="304.0" style="-fx-background-color: #1A5994;" text="Messagerie" textFill="WHITE" />
+                        <Label alignment="CENTER" layoutX="5.0" layoutY="33.0" prefHeight="200.0" prefWidth="379.0" style="-fx-background-color: #1A5994;" text="Notes du jour" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab closable="false" text="        Matériel          ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="266.0" prefWidth="734.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Button contentDisplay="CENTER" layoutX="25.0" layoutY="39.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="188.0" text="Liste matériels" />
+                        <Button contentDisplay="CENTER" layoutX="25.0" layoutY="144.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="188.0" text="Modifier matériel" />
+                        <Button contentDisplay="CENTER" layoutX="25.0" layoutY="92.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="188.0" text="Ajouter matériel" />
+                        <Button contentDisplay="CENTER" layoutX="25.0" layoutY="198.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="188.0" text="Supprimer matériel" />
+                        <Label alignment="CENTER" layoutX="278.0" layoutY="33.0" prefHeight="200.0" prefWidth="379.0" style="-fx-background-color: #1A5994;" text="Notes" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="       Mon profil       ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="266.0" prefWidth="717.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="293.0" layoutY="34.0" prefHeight="200.0" prefWidth="379.0" style="-fx-background-color: #1A5994;" text="Mes informations" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Label>
+                        <Button contentDisplay="CENTER" layoutX="22.0" layoutY="102.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="188.0" text="Modifier mes informations" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Text fill="WHITE" layoutX="247.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue Mr. Responsable matériel" underline="true">
+         <font>
+            <Font name="SimSun" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="168.0" fitWidth="153.0" layoutX="-3.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoCentre.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="650.0" layoutY="7.0" text="©  2018" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="CENTER" layoutX="552.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: #1A5994;" text="Déconnexion" textAlignment="JUSTIFY" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

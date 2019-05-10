@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="386.0" prefWidth="291.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FonctionnaireController">
+   <children>
+      <TextField fx:id="cinTxt" layoutX="71.0" layoutY="25.0" promptText="CIN" />
+      <TextField fx:id="nomTxt" layoutX="71.0" layoutY="56.0" promptText="Nom" />
+      <TextField fx:id="prenomTxt" layoutX="71.0" layoutY="94.0" promptText="Prenom" />
+      <Button layoutX="120.0" layoutY="265.0" mnemonicParsing="false" onAction="#enregistrerFCT" prefHeight="25.0" prefWidth="50.0" text="ok" />
+      <TextField fx:id="mailTxt" layoutX="71.0" layoutY="130.0" promptText="Mail" />
+      <TextField fx:id="numtelTxt" layoutX="71.0" layoutY="162.0" promptText="NumTel" />
+      <TextField fx:id="adresseTxt" layoutX="71.0" layoutY="203.0" promptText="Adresse" />
+   </children>
+</AnchorPane>
